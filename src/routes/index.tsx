@@ -4,6 +4,7 @@ import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { Problem } from "@/components/landing/Problem";
 import { Pricing } from "@/components/landing/Pricing";
+import { Partners } from "@/components/landing/Partners";
 import { Trust } from "@/components/landing/Trust";
 import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
@@ -80,6 +81,7 @@ function LandingPage() {
       <Hero />
       <Problem />
       <Pricing onBuy={handlePayment} />
+      <Partners />
       <Trust />
       <FAQ />
       <Footer />
