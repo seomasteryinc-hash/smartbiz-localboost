@@ -1,13 +1,20 @@
 import { MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 px-4 pt-4">
-      <div className="glass-strong mx-auto max-w-6xl rounded-2xl px-5 py-3 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 font-display font-extrabold tracking-tight">
-          <span className="inline-block h-7 w-7 rounded-lg bg-neon glow-cyan-soft" />
-          <span className="text-white">SmartBiz</span>
-          <span className="text-neon">Digital</span>
+      <div className="glass-strong mx-auto max-w-6xl rounded-2xl pl-3 pr-3 py-2 flex items-center justify-between">
+        <a href="#" className="flex items-center gap-2.5">
+          <img
+            src={logo}
+            alt="SmartBiz Digital Marketing"
+            className="h-10 w-10 rounded-lg object-cover glow-cyan-soft"
+          />
+          <span className="font-display font-extrabold tracking-tight hidden sm:inline">
+            <span className="text-white">SmartBiz</span>{" "}
+            <span className="text-neon">Digital</span>
+          </span>
         </a>
         <a
           href="https://wa.me/917084457758"
