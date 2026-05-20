@@ -81,6 +81,7 @@ function LandingPage() {
       <Hero />
       <Problem />
       <Pricing onBuy={handlePayment} />
+      <Partners />
       <Trust />
       <FAQ />
       <Footer />
