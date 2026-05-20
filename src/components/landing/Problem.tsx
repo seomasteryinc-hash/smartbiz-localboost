@@ -1,15 +1,20 @@
+import { AlertTriangle } from "lucide-react";
+
 const problems = [
   {
-    icon: "❌",
-    text: "Customer Google par search karke kisi doosri shop par chala jata hai.",
+    number: "01",
+    title: "Losing Customers to Competitors",
+    text: "When customers search on Google, they end up visiting another shop instead of yours.",
   },
   {
-    icon: "❌",
-    text: "Maps par sahi mobile number ya timing na hone se naye customers call nahi kar paate.",
+    number: "02",
+    title: "Wrong Contact Information",
+    text: "Incorrect phone numbers or timings on Maps stop new customers from reaching out.",
   },
   {
-    icon: "❌",
-    text: "Local area me sabhi logo ko aapki shop aur services ke baare me pata hi nahi chalta.",
+    number: "03",
+    title: "Zero Local Visibility",
+    text: "People in your own area don't even know your shop and the services you offer.",
   },
 ];
 
@@ -17,11 +22,16 @@ export function Problem() {
   return (
     <section id="problem" className="py-24 px-4">
       <div className="mx-auto max-w-6xl">
+        <div className="flex justify-center mb-5">
+          <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1 text-xs text-neon">
+            <AlertTriangle className="h-3 w-3" /> The 3 Biggest Mistakes
+          </div>
+        </div>
         <h2 className="font-display font-black text-3xl sm:text-4xl md:text-5xl text-center max-w-3xl mx-auto leading-tight">
-          Kya aapki dukan Google par <span className="text-neon">nahi dikhti?</span>
+          Why your shop is <span className="text-neon">invisible on Google</span>
         </h2>
         <p className="mt-4 text-center text-white/60 text-lg">
-          Aap ye 3 galti kar rahe hain:
+          Most local businesses make these 3 critical mistakes — and lose customers every day.
         </p>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -30,8 +40,13 @@ export function Problem() {
               key={i}
               className="glass rounded-2xl p-7 group hover:border-neon/40 hover:glow-cyan-soft transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="text-3xl mb-4 grayscale-0">{p.icon}</div>
-              <p className="text-white/85 text-base leading-relaxed font-medium">
+              <div className="font-display font-black text-4xl text-gradient-cyan mb-4">
+                {p.number}
+              </div>
+              <h3 className="font-display font-extrabold text-lg text-white mb-2">
+                {p.title}
+              </h3>
+              <p className="text-white/70 text-sm leading-relaxed">
                 {p.text}
               </p>
               <div className="mt-6 h-px w-12 bg-neon/60 group-hover:w-full transition-all duration-500" />
