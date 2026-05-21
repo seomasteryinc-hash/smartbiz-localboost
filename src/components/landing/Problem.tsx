@@ -1,20 +1,29 @@
-import { AlertTriangle } from "lucide-react";
+import { AlertTriangle, EyeOff, MapPinOff, PhoneOff, SearchX, Store, UsersRound } from "lucide-react";
 
 const problems = [
   {
     number: "01",
     title: "Losing Customers to Competitors",
     text: "When customers search on Google, they end up visiting another shop instead of yours.",
+    icon: SearchX,
+    supportingIcon: Store,
+    metric: "Missed Searches",
   },
   {
     number: "02",
     title: "Wrong Contact Information",
     text: "Incorrect phone numbers or timings on Maps stop new customers from reaching out.",
+    icon: PhoneOff,
+    supportingIcon: MapPinOff,
+    metric: "Lost Calls",
   },
   {
     number: "03",
     title: "Zero Local Visibility",
     text: "People in your own area don't even know your shop and the services you offer.",
+    icon: EyeOff,
+    supportingIcon: UsersRound,
+    metric: "Low Reach",
   },
 ];
 
