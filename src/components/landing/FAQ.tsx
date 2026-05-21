@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Kya mera paisa safe hai?",
-    a: "Haan, hum Cashfree ka official verified secure payment portal use karte hain.",
+    a: "Haan, payment direct UPI par hoti hai aur confirmation ke baad hamari team kaam start karti hai.",
   },
 ];
 

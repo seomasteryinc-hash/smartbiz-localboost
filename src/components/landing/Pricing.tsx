@@ -112,7 +112,7 @@ export function Pricing({ onBuy }: Props) {
 
         {/* Security badges */}
         <div className="mt-12 glass rounded-2xl p-5 flex flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm">
-          {["🛡 PCI-DSS Compliant", "🔒 100% Secure SSL Checkout", "✅ Cashfree Secured Partner"].map((b) => (
+          {["✅ Verified Business Setup", "🔒 Secure SSL Website", "💬 Direct WhatsApp Support"].map((b) => (
             <span key={b} className="text-white/80 font-medium">{b}</span>
           ))}
         </div>

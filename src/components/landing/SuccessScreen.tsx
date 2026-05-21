@@ -1,5 +1,7 @@
 import { CheckCircle2, MessageCircle } from "lucide-react";
 
+const WHATSAPP_URL = "https://web.whatsapp.com/send?phone=917084457758";
+
 type Props = {
   planId: string;
   amount: number;
@@ -35,7 +37,7 @@ export function SuccessScreen({ planId, amount, onBack }: Props) {
 
         <div className="mt-7 flex flex-col sm:flex-row gap-3">
           <a
-            href="https://wa.me/917084457758"
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
             className="flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp text-black font-bold py-3 glow-green"

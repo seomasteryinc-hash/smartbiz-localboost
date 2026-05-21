@@ -40,7 +40,7 @@ export function Hero() {
           <span>•</span>
           <span>24–48 hrs Setup</span>
           <span>•</span>
-          <span>Cashfree Secured</span>
+          <span>Verified Support</span>
         </div>
       </div>
     </section>

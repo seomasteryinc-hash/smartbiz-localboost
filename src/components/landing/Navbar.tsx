@@ -1,6 +1,8 @@
 import { MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
+const WHATSAPP_URL = "https://web.whatsapp.com/send?phone=917084457758";
+
 export function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 px-4 pt-4">
@@ -17,7 +19,7 @@ export function Navbar() {
           </span>
         </a>
         <a
-          href="https://wa.me/917084457758"
+          href={WHATSAPP_URL}
           target="_blank"
           rel="noreferrer"
           className="group inline-flex items-center gap-2 rounded-full bg-whatsapp px-4 py-2 text-sm font-semibold text-black glow-green transition hover:scale-105"
