@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { Problem } from "@/components/landing/Problem";
@@ -22,42 +22,16 @@ export const Route = createFileRoute("/")({
           "India's most trusted digital growth partner for Janseva Kendras & Mobile Shops. Google Business setup, local ads & branding starting at ₹399.",
       },
       { property: "og:title", content: "SmartBiz Digital Marketing" },
-      { property: "og:description", content: "Apni shop ko online lekar aayein. 24-48 hrs setup. Cashfree secured." },
+      { property: "og:description", content: "Apni shop ko online lekar aayein. 24-48 hrs setup with verified digital support." },
     ],
   }),
   component: LandingPage,
 });
 
-declare global {
-  interface Window {
-    Cashfree?: any;
-  }
-}
-
 function LandingPage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selected, setSelected] = useState<{ id: string; amount: number } | null>(null);
   const [success, setSuccess] = useState<{ id: string; amount: number } | null>(null);
-
-  // Inject Cashfree SDK v3
-  useEffect(() => {
-    if (document.querySelector('script[data-cashfree="v3"]')) return;
-    const s = document.createElement("script");
-    s.src = "https://sdk.cashfree.com/js/v3/cashfree.js";
-    s.async = true;
-    s.dataset.cashfree = "v3";
-    s.onload = () => {
-      try {
-        if (window.Cashfree) {
-          // Initialize in sandbox mode
-          window.Cashfree({ mode: "sandbox" });
-        }
-      } catch (e) {
-        console.warn("Cashfree init skipped", e);
-      }
-    };
-    document.head.appendChild(s);
-  }, []);
 
   const handlePayment = (planId: string, amount: number) => {
     setSelected({ id: planId, amount });
