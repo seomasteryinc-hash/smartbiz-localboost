@@ -1,9 +1,11 @@
 import { MessageCircle } from "lucide-react";
 
+const WHATSAPP_URL = "https://web.whatsapp.com/send?phone=917084457758";
+
 export function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/917084457758"
+      href={WHATSAPP_URL}
       target="_blank"
       rel="noreferrer"
       aria-label="Chat on WhatsApp"
