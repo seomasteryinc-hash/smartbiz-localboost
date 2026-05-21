@@ -87,6 +87,8 @@ function LandingPage() {
       <FAQ />
       <Footer />
 
+      <FloatingWhatsApp />
+
       <PaymentModal
         open={modalOpen}
         planId={selected?.id ?? null}
