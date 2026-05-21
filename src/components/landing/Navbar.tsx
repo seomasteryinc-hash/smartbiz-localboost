@@ -17,7 +17,7 @@ export function Navbar() {
           </span>
         </a>
         <a
-          href="https://wa.me/91917084457758"
+          href="https://wa.me/917084457758"
           target="_blank"
           rel="noreferrer"
           className="group inline-flex items-center gap-2 rounded-full bg-whatsapp px-4 py-2 text-sm font-semibold text-black glow-green transition hover:scale-105"
