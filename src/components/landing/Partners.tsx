@@ -46,26 +46,6 @@ const partners = [
     ),
   },
   {
-    name: "Cashfree Payments",
-    badge: "Secured Partner",
-    svg: (
-      <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden>
-        <rect width="24" height="24" rx="5" fill="#6933FF"/>
-        <path d="M7 9.5a2.5 2.5 0 012.5-2.5h6a1.5 1.5 0 010 3h-6a.5.5 0 100 1h4a2.5 2.5 0 010 5H7.5a1.5 1.5 0 010-3H13.5a.5.5 0 100-1H9.5A2.5 2.5 0 017 9.5z" fill="#fff"/>
-      </svg>
-    ),
-  },
-  {
-    name: "Razorpay",
-    badge: "Trusted Gateway",
-    svg: (
-      <svg viewBox="0 0 24 24" className="h-7 w-7" aria-hidden>
-        <path fill="#3395FF" d="M11.7 8.7L9.6 16h2.6l3.6-14L4.5 11.5l1.3 1.4 7.3-3z"/>
-        <path fill="#072654" d="M3 22l3.4-12.5 7.4 4L11.7 22z"/>
-      </svg>
-    ),
-  },
-  {
     name: "Digital India",
     badge: "Govt. Initiative",
     svg: (
