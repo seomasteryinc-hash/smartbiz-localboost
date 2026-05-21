@@ -10,6 +10,7 @@ import { FAQ } from "@/components/landing/FAQ";
 import { Footer } from "@/components/landing/Footer";
 import { PaymentModal } from "@/components/landing/PaymentModal";
 import { SuccessScreen } from "@/components/landing/SuccessScreen";
+import { FloatingWhatsApp } from "@/components/landing/FloatingWhatsApp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -85,6 +86,8 @@ function LandingPage() {
       <Trust />
       <FAQ />
       <Footer />
+
+      <FloatingWhatsApp />
 
       <PaymentModal
         open={modalOpen}
