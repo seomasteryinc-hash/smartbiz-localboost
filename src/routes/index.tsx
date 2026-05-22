@@ -7,6 +7,7 @@ import { Pricing } from "@/components/landing/Pricing";
 import { Partners } from "@/components/landing/Partners";
 import { Trust } from "@/components/landing/Trust";
 import { FAQ } from "@/components/landing/FAQ";
+import { Reviews } from "@/components/landing/Reviews";
 import { Footer } from "@/components/landing/Footer";
 import { PaymentModal } from "@/components/landing/PaymentModal";
 import { SuccessScreen } from "@/components/landing/SuccessScreen";
@@ -59,6 +60,7 @@ function LandingPage() {
       <Partners />
       <Trust />
       <FAQ />
+      <Reviews />
       <Footer />
 
       <FloatingWhatsApp />

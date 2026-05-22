@@ -16,6 +16,9 @@ export function Footer() {
           <p className="text-white/55 text-xs">
             WhatsApp Helpline: <span className="text-neon font-semibold">+91 7084457758</span>
           </p>
+          <p className="text-white/55 text-xs">
+            Email: <a href="mailto:infosmartbiz@proton.me" className="text-neon font-semibold hover:underline">infosmartbiz@proton.me</a>
+          </p>
         </div>
       </div>
     </footer>
