@@ -60,6 +60,7 @@ function LandingPage() {
       <Pricing onBuy={handlePayment} />
       <Partners />
       <Trust />
+      <VerifiedSupport />
       <FAQ />
       <Reviews />
       <Footer />
