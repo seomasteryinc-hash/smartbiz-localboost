@@ -8,6 +8,7 @@ import { Partners } from "@/components/landing/Partners";
 import { Trust } from "@/components/landing/Trust";
 import { FAQ } from "@/components/landing/FAQ";
 import { Reviews } from "@/components/landing/Reviews";
+import { VerifiedSupport } from "@/components/landing/VerifiedSupport";
 import { Footer } from "@/components/landing/Footer";
 import { PaymentModal } from "@/components/landing/PaymentModal";
 import { SuccessScreen } from "@/components/landing/SuccessScreen";
