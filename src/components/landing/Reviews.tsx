@@ -1,35 +1,45 @@
-import { MapPin, Quote, Star, TrendingUp } from "lucide-react";
-import rajeshPhoto from "@/assets/review-rajesh.jpg";
-import priyaPhoto from "@/assets/review-priya.jpg";
-import amanPhoto from "@/assets/review-aman.jpg";
+import { MapPin, Quote, Star, TrendingUp, User } from "lucide-react";
 
 const reviews = [
   {
     name: "Rajesh Verma",
     role: "Janseva Kendra Owner",
     location: "Lucknow, UP",
-    image: rajeshPhoto,
-    outcome: "More local calls",
+    outcome: "Local calls badhe",
     review:
-      "SmartBiz made our Google Business profile look professional. Customers can now find our address, services and contact number easily, and enquiries have improved a lot.",
+      "SmartBiz ne hamari Google Business profile ko bilkul professional bana diya. Ab customers ko address, services aur number aasani se mil jata hai aur enquiries kaafi badh gayi hain.",
   },
   {
     name: "Priya Sharma",
     role: "CSC & Digital Services",
     location: "Kanpur, UP",
-    image: priyaPhoto,
-    outcome: "Better trust online",
+    outcome: "Online trust improve hua",
     review:
-      "Their team handled everything clearly — business listing, service details, photos and support. The setup looks genuine and customers feel more confident before calling.",
+      "Team ne sab kuch clearly handle kiya — listing, service details, photos aur support. Setup genuine lagta hai aur customers call karne se pehle confident feel karte hain.",
   },
   {
     name: "Aman Khan",
     role: "Mobile Shop Owner",
     location: "Prayagraj, UP",
-    image: amanPhoto,
-    outcome: "Higher walk-ins",
+    outcome: "Walk-ins zyada hue",
     review:
-      "Before SmartBiz, my shop was not visible properly online. Now people nearby can discover my mobile repair and accessories services directly through search and maps.",
+      "Pehle meri shop online theek se dikhti nahi thi. Ab aas-paas ke log mobile repair aur accessories services search aur maps se directly dhoondh lete hain.",
+  },
+  {
+    name: "Neha Gupta",
+    role: "Boutique Owner",
+    location: "Varanasi, UP",
+    outcome: "Naye customers mile",
+    review:
+      "Boutique ki online presence pehle bilkul nahi thi. SmartBiz ne profile, photos aur WhatsApp setup sab kar diya. Ab roz naye customers WhatsApp pe order karte hain.",
+  },
+  {
+    name: "Suresh Yadav",
+    role: "Electrician Service",
+    location: "Gorakhpur, UP",
+    outcome: "Direct WhatsApp leads",
+    review:
+      "Mujhe technical knowledge nahi thi, lekin SmartBiz ki team ne sab kuch khud setup kiya. Ab Google par search hote hi log seedha WhatsApp pe message karte hain.",
   },
 ];
 
@@ -46,7 +56,7 @@ export function Reviews() {
               Indian businesses trust <span className="text-neon">SmartBiz services</span>
             </h2>
             <p className="mt-3 max-w-xl text-sm text-muted-foreground sm:text-base">
-              Feedback from local business owners who improved their online presence, customer calls and shop visibility.
+              Local business owners ka feedback jinhone apni online presence, customer calls aur shop visibility improve ki.
             </p>
           </div>
 
@@ -59,7 +69,7 @@ export function Reviews() {
           </div>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {reviews.map((review) => (
             <article
               key={review.name}
@@ -70,14 +80,9 @@ export function Reviews() {
               </div>
 
               <div className="relative flex items-center gap-4">
-                <img
-                  src={review.image}
-                  alt={`${review.name} customer profile`}
-                  width={768}
-                  height={768}
-                  loading="lazy"
-                  className="h-16 w-16 rounded-full border border-neon/25 object-cover shadow-lg shadow-neon/10"
-                />
+                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-neon/25 bg-card shadow-lg shadow-neon/10">
+                  <User className="h-7 w-7 text-neon" />
+                </div>
                 <div>
                   <p className="font-display text-base font-black text-foreground">{review.name}</p>
                   <p className="text-xs font-semibold text-neon">{review.role}</p>
